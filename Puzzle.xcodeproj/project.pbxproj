@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D7D69271A1826CE0011636B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D69261A1826CE0011636B /* AppDelegate.swift */; };
+		4D7D69291A1826CE0011636B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D69281A1826CE0011636B /* ViewController.swift */; };
+		4D7D692C1A1826CE0011636B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D692A1A1826CE0011636B /* Main.storyboard */; };
+		4D7D692E1A1826CE0011636B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D692D1A1826CE0011636B /* Images.xcassets */; };
+		4D7D69311A1826CE0011636B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D692F1A1826CE0011636B /* LaunchScreen.xib */; };
+		4D7D693D1A1826CF0011636B /* PuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D693C1A1826CF0011636B /* PuzzleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D7D69371A1826CE0011636B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D7D69191A1826CE0011636B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D7D69201A1826CE0011636B;
+			remoteInfo = Puzzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D7D69211A1826CE0011636B /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7D69251A1826CE0011636B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D7D69261A1826CE0011636B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D7D69281A1826CE0011636B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D7D692B1A1826CE0011636B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D7D692D1A1826CE0011636B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4D7D69301A1826CE0011636B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4D7D69361A1826CE0011636B /* PuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7D693B1A1826CF0011636B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D7D693C1A1826CF0011636B /* PuzzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D7D691E1A1826CE0011636B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7D69331A1826CE0011636B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D7D69181A1826CE0011636B = {
+			isa = PBXGroup;
+			children = (
+				4D7D69231A1826CE0011636B /* Puzzle */,
+				4D7D69391A1826CF0011636B /* PuzzleTests */,
+				4D7D69221A1826CE0011636B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D7D69221A1826CE0011636B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D69211A1826CE0011636B /* Puzzle.app */,
+				4D7D69361A1826CE0011636B /* PuzzleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D7D69231A1826CE0011636B /* Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D69261A1826CE0011636B /* AppDelegate.swift */,
+				4D7D69281A1826CE0011636B /* ViewController.swift */,
+				4D7D692A1A1826CE0011636B /* Main.storyboard */,
+				4D7D692D1A1826CE0011636B /* Images.xcassets */,
+				4D7D692F1A1826CE0011636B /* LaunchScreen.xib */,
+				4D7D69241A1826CE0011636B /* Supporting Files */,
+			);
+			path = Puzzle;
+			sourceTree = "<group>";
+		};
+		4D7D69241A1826CE0011636B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D69251A1826CE0011636B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D7D69391A1826CF0011636B /* PuzzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D693C1A1826CF0011636B /* PuzzleTests.swift */,
+				4D7D693A1A1826CF0011636B /* Supporting Files */,
+			);
+			path = PuzzleTests;
+			sourceTree = "<group>";
+		};
+		4D7D693A1A1826CF0011636B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D693B1A1826CF0011636B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D7D69201A1826CE0011636B /* Puzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D7D69401A1826CF0011636B /* Build configuration list for PBXNativeTarget "Puzzle" */;
+			buildPhases = (
+				4D7D691D1A1826CE0011636B /* Sources */,
+				4D7D691E1A1826CE0011636B /* Frameworks */,
+				4D7D691F1A1826CE0011636B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Puzzle;
+			productName = Puzzle;
+			productReference = 4D7D69211A1826CE0011636B /* Puzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D7D69351A1826CE0011636B /* PuzzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D7D69431A1826CF0011636B /* Build configuration list for PBXNativeTarget "PuzzleTests" */;
+			buildPhases = (
+				4D7D69321A1826CE0011636B /* Sources */,
+				4D7D69331A1826CE0011636B /* Frameworks */,
+				4D7D69341A1826CE0011636B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D7D69381A1826CE0011636B /* PBXTargetDependency */,
+			);
+			name = PuzzleTests;
+			productName = PuzzleTests;
+			productReference = 4D7D69361A1826CE0011636B /* PuzzleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D7D69191A1826CE0011636B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mark Meretzky";
+				TargetAttributes = {
+					4D7D69201A1826CE0011636B = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					4D7D69351A1826CE0011636B = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 4D7D69201A1826CE0011636B;
+					};
+				};
+			};
+			buildConfigurationList = 4D7D691C1A1826CE0011636B /* Build configuration list for PBXProject "Puzzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D7D69181A1826CE0011636B;
+			productRefGroup = 4D7D69221A1826CE0011636B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D7D69201A1826CE0011636B /* Puzzle */,
+				4D7D69351A1826CE0011636B /* PuzzleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D7D691F1A1826CE0011636B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7D692C1A1826CE0011636B /* Main.storyboard in Resources */,
+				4D7D69311A1826CE0011636B /* LaunchScreen.xib in Resources */,
+				4D7D692E1A1826CE0011636B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7D69341A1826CE0011636B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D7D691D1A1826CE0011636B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7D69291A1826CE0011636B /* ViewController.swift in Sources */,
+				4D7D69271A1826CE0011636B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7D69321A1826CE0011636B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7D693D1A1826CF0011636B /* PuzzleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D7D69381A1826CE0011636B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D7D69201A1826CE0011636B /* Puzzle */;
+			targetProxy = 4D7D69371A1826CE0011636B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D7D692A1A1826CE0011636B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D7D692B1A1826CE0011636B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D7D692F1A1826CE0011636B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D7D69301A1826CE0011636B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D7D693E1A1826CF0011636B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D7D693F1A1826CF0011636B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D7D69411A1826CF0011636B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Puzzle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4D7D69421A1826CF0011636B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Puzzle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4D7D69441A1826CF0011636B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PuzzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Puzzle.app/Puzzle";
+			};
+			name = Debug;
+		};
+		4D7D69451A1826CF0011636B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PuzzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Puzzle.app/Puzzle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D7D691C1A1826CE0011636B /* Build configuration list for PBXProject "Puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7D693E1A1826CF0011636B /* Debug */,
+				4D7D693F1A1826CF0011636B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D7D69401A1826CF0011636B /* Build configuration list for PBXNativeTarget "Puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7D69411A1826CF0011636B /* Debug */,
+				4D7D69421A1826CF0011636B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4D7D69431A1826CF0011636B /* Build configuration list for PBXNativeTarget "PuzzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7D69441A1826CF0011636B /* Debug */,
+				4D7D69451A1826CF0011636B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D7D69191A1826CE0011636B /* Project object */;
+}
