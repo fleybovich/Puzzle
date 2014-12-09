@@ -13,7 +13,7 @@ class View: UIView {
 	var emptyCol: Int = 1;
     var nmoves: Int = 0;
     var rank: String = "Rank:";
-
+    let label: UILabel = UILabel();
     let textview: UITextView = UITextView();
 
     override init(frame: CGRect) {
@@ -52,7 +52,7 @@ class View: UIView {
 
 
         var s: String = "\(nmoves) \(rank)";
-        let font: UIFont = UIFont.systemFontOfSize(32);
+        let font: UIFont! = UIFont(name: "Didot-Italic", size: 35);
         let attributes: [NSObject: AnyObject] = [NSFontAttributeName: font];
         let size: CGSize = s.sizeWithAttributes(attributes);
         
@@ -63,15 +63,44 @@ class View: UIView {
         
         let f: CGRect = CGRectMake(
             applicationFrame.origin.x - 150,
-            applicationFrame.origin.y + 200,
+            applicationFrame.origin.y + 150,
             300,
             250);
         
+
+        
+        
+        var title: String = "Slider Puzzle";
+        let titlefont: UIFont? = UIFont(name: "Didot-Italic", size: 50);
+        let titleattributes: [NSObject: AnyObject] = [NSFontAttributeName: font];
+        let titlesize: CGSize = title.sizeWithAttributes(attributes);
+        
+        //Put upper left corner of label in upper left corner of application frame.
+        //Make label just big enough to hold the string.
+        
+        
+        let titlef: CGRect = CGRectMake(
+            applicationFrame.origin.x - 150,
+            applicationFrame.origin.y - 300,
+            300,
+            100);
+        
+        label = UILabel(frame: titlef);
+        label.backgroundColor = UIColor.clearColor();
+        label.font = titlefont;
+        label.text = title;
+        addSubview(label);
+        
         textview = UITextView(frame: f);
-        textview.backgroundColor = UIColor.blueColor();
+        textview.backgroundColor = UIColor.clearColor();
         textview.font = font;
         textview.text = s;
         addSubview(textview);
+        
+        
+        
+        
+        
 	}
    
    
@@ -125,15 +154,21 @@ class View: UIView {
         nmoves++
         println("\(nmoves)");
         if nmoves > 20 {
-            rank = "You Got This!";
+            rank = "You Got This, Just A Little More";
+            println("\(rank)");
+        }
+        else if nmoves > 10 {
+            rank = "That's It";
             println("\(rank)");
         }
         else if nmoves > 2 {
             rank = "Keep Going ...";
             println("\(rank)");
-        } ;
+        };
         
-        textview.text = String(nmoves) + " \(rank)";
+        textview.text = "# Moves: " + String(nmoves) + " \(rank)";
+        
+
         }
         
 	

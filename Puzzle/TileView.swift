@@ -12,6 +12,8 @@ class TileView: UIImageView {
 	let margin: CGFloat = 0.5;	//0.5 pairs of pixels = 1 pixel
 	var row: Int = 0;	//current row and column numbers of this TileView
 	var col: Int = 0;
+    var correctRow: Int = 0
+    var correctCol: Int = 0
 
 	init(row: Int, col: Int) {
 		let filename: String = "\(row + 1)\(col + 1).png";
@@ -22,6 +24,11 @@ class TileView: UIImageView {
 		super.init(image: image!);
 		userInteractionEnabled = true;	//defaults to false in class UIImageView
 		moveToRow(row, col: col);
+        
+        let correctRow: Int = self.row
+        let correctCol: Int = self.col
+        println("\(correctRow) and  \(correctCol)");
+        
 	}
 
 	//Never called.
@@ -36,7 +43,20 @@ class TileView: UIImageView {
 		center = CGPointMake(
 			CGFloat(col) * (margin + bounds.size.width),
 			CGFloat(row) * (margin + bounds.size.height));
+        
 	}
+    
+    
+    //Return true if this TileView is curently in the correct position,
+    //false otherwise.
+    
+    func inCorrectPosition() -> Bool {
+        if row == correctRow && col == correctCol {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 	/*
 	// Only override drawRect: if you perform custom drawing.
