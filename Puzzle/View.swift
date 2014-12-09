@@ -11,15 +11,15 @@ import UIKit
 class View: UIView {
 	var emptyRow: Int = 1;	//Lower right position is initially empty.
 	var emptyCol: Int = 1;
-    var nmoves: Int = 0
+    var nmoves: Int = 0;
     var rank: String = "Rank:";
-    func SetNMoves () {
-    
-    }
+
+    let textview: UITextView = UITextView();
+
     override init(frame: CGRect) {
         super.init(frame: frame);
         
-		self.backgroundColor = UIColor.redColor();
+		self.backgroundColor = UIColor.greenColor();
 
 		for var row = -1; row <= 1; ++row {
 			for var col = -1; col <= 1; ++col {
@@ -50,8 +50,8 @@ class View: UIView {
             tryToMoveTileViewStart(tileView);
         }
 
-        var rank: String = "Rank:"
-        var s: String = "\(rank)";
+
+        var s: String = "\(nmoves) \(rank)";
         let font: UIFont = UIFont.systemFontOfSize(32);
         let attributes: [NSObject: AnyObject] = [NSFontAttributeName: font];
         let size: CGSize = s.sizeWithAttributes(attributes);
@@ -62,16 +62,16 @@ class View: UIView {
         let applicationFrame: CGRect = screen.applicationFrame;
         
         let f: CGRect = CGRectMake(
-            applicationFrame.origin.x - (applicationFrame.origin.x / 2),
-            applicationFrame.origin.y - (applicationFrame.origin.y / 2),
-            size.width,
-            size.height);
+            applicationFrame.origin.x - 150,
+            applicationFrame.origin.y + 200,
+            300,
+            250);
         
-        let label: UILabel = UILabel(frame: f);
-        label.backgroundColor = UIColor.yellowColor();
-        label.font = font;
-        label.text = s;
-        addSubview(label);
+        textview = UITextView(frame: f);
+        textview.backgroundColor = UIColor.blueColor();
+        textview.font = font;
+        textview.text = s;
+        addSubview(textview);
 	}
    
    
@@ -125,14 +125,15 @@ class View: UIView {
         nmoves++
         println("\(nmoves)");
         if nmoves > 20 {
-            self.rank = "Rank: brighter than average";
+            rank = "You Got This!";
             println("\(rank)");
         }
         else if nmoves > 2 {
-            self.rank = "Rank: genius ";
+            rank = "Keep Going ...";
             println("\(rank)");
         } ;
         
+        textview.text = String(nmoves) + " \(rank)";
         }
         
 	
