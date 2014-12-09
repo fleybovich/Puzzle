@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	override func loadView() {
+		let screen: UIScreen = UIScreen.mainScreen();
+		view = View(frame: screen.bounds);
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.

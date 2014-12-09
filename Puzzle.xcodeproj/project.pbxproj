@@ -13,6 +13,8 @@
 		4D7D692E1A1826CE0011636B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D692D1A1826CE0011636B /* Images.xcassets */; };
 		4D7D69311A1826CE0011636B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D692F1A1826CE0011636B /* LaunchScreen.xib */; };
 		4D7D693D1A1826CF0011636B /* PuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D693C1A1826CF0011636B /* PuzzleTests.swift */; };
+		4D7D69471A1826E10011636B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D69461A1826E10011636B /* View.swift */; };
+		4D7D694B1A1827DF0011636B /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D694A1A1827DF0011636B /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		4D7D69361A1826CE0011636B /* PuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7D693B1A1826CF0011636B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D7D693C1A1826CF0011636B /* PuzzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTests.swift; sourceTree = "<group>"; };
+		4D7D69461A1826E10011636B /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		4D7D694A1A1827DF0011636B /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				4D7D69261A1826CE0011636B /* AppDelegate.swift */,
 				4D7D69281A1826CE0011636B /* ViewController.swift */,
+				4D7D69461A1826E10011636B /* View.swift */,
+				4D7D694A1A1827DF0011636B /* TileView.swift */,
 				4D7D692A1A1826CE0011636B /* Main.storyboard */,
 				4D7D692D1A1826CE0011636B /* Images.xcassets */,
 				4D7D692F1A1826CE0011636B /* LaunchScreen.xib */,
@@ -214,6 +220,8 @@
 			files = (
 				4D7D69291A1826CE0011636B /* ViewController.swift in Sources */,
 				4D7D69271A1826CE0011636B /* AppDelegate.swift in Sources */,
+				4D7D694B1A1827DF0011636B /* TileView.swift in Sources */,
+				4D7D69471A1826E10011636B /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
